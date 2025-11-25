@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="科技冰激凌公司官网，提供先进的科技产品和服务。">
+    <meta name="keywords" content="科技冰激凌, 高科技, 产品, 服务">
+    <title>科技冰激凌</title>
+
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 引入Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- 引入Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* 基本页面样式 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 导航栏 */
+        nav {
+            background-color: #1c1c1c;
+            padding: 1rem 0;
+        }
+        nav .navbar-brand img {
+            width: 160px;
+        }
+        nav .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            font-weight: 500;
+        }
+        nav .navbar-nav .nav-link:hover {
+            color: #ff5722 !important;
+        }
+
+        /* 主页大图 */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJlYXV0aWZ1bC9yZWFjdGlvbnxlbnwwfHx8fDE2NzA1NzU5MzQ&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        .hero .btn {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        .hero .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* 服务区域 */
+        .services {
+            padding: 5rem 0;
+            background-color: #ffffff;
+        }
+        .services h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .services .card {
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .services .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .services .card-body {
+            padding: 2rem;
+            background-color: #f7f7f7;
+        }
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .services .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .services .card-text {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #1c1c1c;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .services .card-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">
+            <img src="https://via.placeholder.com/160x80?text=Tech+Icecream" alt="科技冰激凌">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">服务</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主页内容 -->
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>欢迎来到科技冰激凌</h1>
+            <p>我们为您提供最前沿的科技解决方案和创新产品。</p>
+            <a href="#services" class="btn">了解更多</a>
+        </div>
+    </header>
+
+    <!-- 服务展示 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>我们的服务</h2>
+            <div class="row">
+                <!-- 服务1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1600334024340-e125219f99ba?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGJ1c2luZXNzfGVufDB8fHx8fDE2NzA1NzYwNjA&ixlib=rb-1.2.1&q=80&w=1080" class="card-img-top" alt="服务1">
+                        <div class="card-body">
+                            <h5 class="card-title">高科技产品</h5>
+                            <p class="card-text">我们提供尖端科技产品，推动行业发展，包括人工智能、物联网、智能硬件等技术。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 服务2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1602191290903-8fa12810cf0c?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG9mZmljZSUyQyUyMGZ1bGxzc3xlbnwwfHx8fDE2NzA1NzYwNzY&ixlib=rb-1.2.1&q=80&w=1080" class="card-img-top" alt="服务2">
+                        <div class="card-body">
+                            <h5 class="card-title">创新解决方案</h5>
+                            <p class="card-text">根据您的行业需求，提供定制化的解决方案，涵盖大数据分析、云计算、智能自动化等领域。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 服务3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1573485770331-68d6b2342b22?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg0fHxmYWFjdG9yeXxlbnwwfHx8fDE2NzA1NzYwODg&ixlib=rb-1.2.1&q=80&w=1080" class="card-img-top" alt="服务3">
+                        <div class="card-body">
+                            <h5 class="card-title">技术支持</h5>
+                            <p class="card-text">为您提供全方位的技术支持与服务，包括系统集成、设备维护、数据分析等。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <!-- 客户案例 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1581091012181-06db1e598f23?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDk3fHxlc3Bhc2l8ZW58MHx8fHx8fDE2NzA1NzYxMTM&ixlib=rb-1.2.1&q=80&w=1080" class="card-img-top" alt="客户案例">
+                        <div class="card-body">
+                            <h5 class="card-title">客户案例</h5>
+                            <p class="card-text">展示我们成功合作的客户案例，涵盖多个行业，帮助他们提升技术效率与创新能力。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 行业解决方案 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1601451366365-06f8b5738482?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDkxfHxpbnN0cnVjdGlvbmFsfGVufDB8fHx8fDE2NzA1NzYxMjM&ixlib=rb-1.2.1&q=80&w=1080" class="card-img-top" alt="行业解决方案">
+                        <div class="card-body">
+                            <h5 class="card-title">行业解决方案</h5>
+                            <p class="card-text">为不同行业提供量身定制的解决方案，包括金融、医疗、教育等领域。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact">
+        <p>© 2025 科技冰激凌 | 所有权利保留</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
